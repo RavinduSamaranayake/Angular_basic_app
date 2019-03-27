@@ -12,4 +12,11 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  state = true;
+
+  stateChanger(){
+    this.state = !this.state;
+    console.log(this.state)
+  }
+
 }
