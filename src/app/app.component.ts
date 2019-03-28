@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'basic-app';
   fcolor = "brown";
   lcolor = "green";
+  name = "kushan"
   result = 2; //pass the data from component to view (one way data binding)
 
   users = [{fname : "kushan" , lname : "ravindu"},
@@ -17,4 +18,8 @@ export class AppComponent {
            {fname : "janith" , lname : "ravindu"},
            {fname : "shaveen" , lname : "ravindu"},
           ]
+
+  showmyvalue(event){ //event binding from view to component
+    this.name=event.target.value;
+  }
 }

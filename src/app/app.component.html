@@ -5,9 +5,19 @@
          <li>{{user.fname}} {{user.lname}}</li>
     </ul>
     
+    
+   <!-- two way data binding -->
+
+   
     <!-- one way data binding with component and view -->
-    {{result}}
-    <input type="text" [value]="result"> 
+    My name is : {{name}} <br>
+
+     <!-- one way data binding with view and component -->
+    <input type="text" (input)= "showmyvalue($event)"> <br>
+
+     <!-- two way data binding with module and view. in here there is no connection between view and component -->
+     My surname is : {{surname}} <br> 
+    <input type="text" [(ngModel)]= "surname"> <br>
 
 </div>
 <app-footer></app-footer>
