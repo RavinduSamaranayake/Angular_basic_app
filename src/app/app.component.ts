@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'basic-app';
   fcolor = "brown";
   lcolor = "green";
+  result = 2; //pass the data from component to view (one way data binding)
 
   users = [{fname : "kushan" , lname : "ravindu"},
            {fname : "mahesh" , lname : "perera"},

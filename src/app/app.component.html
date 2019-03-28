@@ -4,6 +4,10 @@
     <ul *ngFor = "let user of users;">
          <li>{{user.fname}} {{user.lname}}</li>
     </ul>
+    
+    <!-- one way data binding with component and view -->
+    {{result}}
+    <input type="text" [value]="result"> 
 
 </div>
 <app-footer></app-footer>
