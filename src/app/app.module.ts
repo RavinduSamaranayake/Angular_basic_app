@@ -12,7 +12,8 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'activities', component: ActivitiesComponent },
+  { path: 'activities/:id', component: ActivitiesComponent },
+  { path: 'items', component: ActivitiesComponent },
 ];
 
 @NgModule({

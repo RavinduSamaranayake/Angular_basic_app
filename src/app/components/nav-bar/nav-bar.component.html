@@ -15,8 +15,14 @@
       </li>
 
       <li routerLinkActive="active">
-        <a class="nav-link" routerLink="activities">Activities <span class="sr-only">(current)</span></a>
+        <!-- passing a parameter via navlink -->
+        <a class="nav-link" [routerLink]="['activities',30]">Activities <span class="sr-only">(current)</span></a>
       </li>
+
+      <li routerLinkActive="active">
+          <!-- passing a query parameter via navlink -->
+          <a class="nav-link" [routerLink]="['items']" [queryParams]="{item:'new'}">Items <span class="sr-only">(current)</span></a>
+        </li>
       
       <!-- <li class="nav-item active"><a routerLink="activities" >Activities</a></li>
       <li routerLinkActive="active"><a routerLink="dashboard">Dashboard</a></li>
