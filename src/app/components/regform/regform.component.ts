@@ -25,4 +25,8 @@ export class RegformComponent implements OnInit {
     console.log(form_data.value); //get input value  form the form... (we use the ngModel for this)
   }
 
+  logchange(data){
+    console.log(data);
+  }
+
 }
