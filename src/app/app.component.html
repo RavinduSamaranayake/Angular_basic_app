@@ -1,23 +1,7 @@
 <app-nav-bar></app-nav-bar>
-<h1 [setmycolor]="fcolor" [lcolor]="lcolor">Home</h1>
-<div>
-    <ul *ngFor = "let user of users;">
-         <li>{{user.fname}} {{user.lname}}</li>
-    </ul>
-    
-    
-   <!-- two way data binding -->
+ 
+<router-outlet></router-outlet>
+<!-- Routed components go here -->
 
-   
-    <!-- one way data binding with component and view -->
-    My name is : {{name}} <br>
-
-     <!-- one way data binding with view and component -->
-    <input type="text" (input)= "showmyvalue($event)"> <br>
-
-     <!-- two way data binding with module and view. in here there is no connection between view and component -->
-     My surname is : {{surname}} <br> 
-    <input type="text" [(ngModel)]= "surname"> <br>
-
-</div>
-<app-footer></app-footer>
+ 
+<app-footer></app-footer> 

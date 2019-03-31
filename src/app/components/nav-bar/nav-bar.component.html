@@ -9,7 +9,18 @@
       <li class="nav-item active" (click)="stateChanger()">
         <a class="nav-link" href="#">Change State <span class="sr-only">(current)</span></a>
       </li>
+
+      <li routerLinkActive="active">
+        <a class="nav-link" routerLink="dashboard">Dashboard<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li routerLinkActive="active">
+        <a class="nav-link" routerLink="activities">Activities <span class="sr-only">(current)</span></a>
+      </li>
       
+      <!-- <li class="nav-item active"><a routerLink="activities" >Activities</a></li>
+      <li routerLinkActive="active"><a routerLink="dashboard">Dashboard</a></li>
+       -->
       <!-- change states using if else -->
       <div *ngIf = "state;then logged else logout">state true</div>  
             <!-- <li class="nav-item">
