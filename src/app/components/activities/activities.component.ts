@@ -12,14 +12,21 @@ export class ActivitiesComponent implements OnInit {
   id:any //you can pass any type of parameter
   qparamid:any
   constructor(router:ActivatedRoute) {
+
+
+    //parameter mapping
     router.paramMap.subscribe(params => {
       this.id = params.get('id');
     })
+    
 
+    //query parameter mapping
     router.queryParamMap.subscribe(params => {
       this.qparamid = params.get('item');
-      console.log(this.qparamid)
+       
     })
+
+
    }
 
   ngOnInit() {

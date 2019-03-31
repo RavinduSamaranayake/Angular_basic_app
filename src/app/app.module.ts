@@ -8,12 +8,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SetmycolorDirective } from './directives/setmycolor.directive';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
+import { RegformComponent } from './components/regform/regform.component';
 
 
-const appRoutes: Routes = [
+const appRoutes: Routes = [  //route paths
   { path: 'dashboard', component: DashboardComponent },
   { path: 'activities/:id', component: ActivitiesComponent },
   { path: 'items', component: ActivitiesComponent },
+  { path: 'register', component: RegformComponent },
 ];
 
 @NgModule({
@@ -24,6 +26,7 @@ const appRoutes: Routes = [
     SetmycolorDirective,
     DashboardComponent,
     ActivitiesComponent,
+    RegformComponent,
    
   ],
   

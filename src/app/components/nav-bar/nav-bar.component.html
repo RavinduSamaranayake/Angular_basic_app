@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a7c8df;">
   <a class="navbar-brand" href="#">Basic App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -15,6 +15,10 @@
       </li>
 
       <li routerLinkActive="active">
+          <a class="nav-link" routerLink="register">SignUp<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li routerLinkActive="active">
         <!-- passing a parameter via navlink -->
         <a class="nav-link" [routerLink]="['activities',30]">Activities <span class="sr-only">(current)</span></a>
       </li>
@@ -22,7 +26,7 @@
       <li routerLinkActive="active">
           <!-- passing a query parameter via navlink -->
           <a class="nav-link" [routerLink]="['items']" [queryParams]="{item:'new'}">Items <span class="sr-only">(current)</span></a>
-        </li>
+      </li>
       
       <!-- <li class="nav-item active"><a routerLink="activities" >Activities</a></li>
       <li routerLinkActive="active"><a routerLink="dashboard">Dashboard</a></li>
