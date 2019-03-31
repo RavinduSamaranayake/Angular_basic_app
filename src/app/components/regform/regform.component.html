@@ -3,7 +3,7 @@
         <div class="form-group">
          <label for="exampleInputEmail1">User name</label>
          <!-- we use [(ngModel)] syntax and key for two way data binding -->
-         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" name="username" [(ngModel)]="user.username">
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" name="username" [(ngModel)]="user.username" #x required>
          <small id="emailHelp" class="form-text text-muted">Enter unique user name.</small>
         </div>
         <div class="form-group">
@@ -21,6 +21,9 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+  
+      <!-- check the ng classes -->
+      {{x.className}}
       
 </div>
 
