@@ -13,6 +13,13 @@ export class RegformComponent implements OnInit {
   ngOnInit() {
   }
 
+  user={
+    username:"kushan",
+    email:"ovkravindu95@gmail.com",
+    password:"123"
+
+  }
+
   onSubmit(form_data:NgForm){
     console.log(form_data); //get all data of the form
     console.log(form_data.value); //get input value  form the form... (we use the ngModel for this)
